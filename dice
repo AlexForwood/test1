@@ -1,0 +1,43 @@
+Public Class btnRoll
+
+ 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim Die1 As Integer, Die2 As Integer
+        Randomize()
+        Die1 = Int(Rnd() * 6) + 1
+        Select Case Die1
+            Case 1
+                imgDie1.Image = My.Resources.one
+            Case 2
+                imgDie1.Image = My.Resources.two
+            Case 3
+                imgDie1.Image = My.Resources.three
+            Case 4
+                imgDie1.Image = My.Resources.four
+            Case 5
+                imgDie1.Image = My.Resources.five
+            Case 6
+                imgDie1.Image = My.Resources.six
+        End Select
+
+        Die2 = Int(Rnd() * 6) + 1
+        Select Case Die2
+            Case 1
+                imgDie2.Image = My.Resources.one
+            Case 2
+                imgDie2.Image = My.Resources.two
+            Case 3
+                imgDie2.Image = My.Resources.three
+            Case 4
+                imgDie2.Image = My.Resources.four
+            Case 5
+                imgDie2.Image = My.Resources.five
+            Case 6
+                imgDie2.Image = My.Resources.six
+        End Select
+    End Sub
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        End
+    End Sub
+
+End Class
